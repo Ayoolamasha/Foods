@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="activityUiData"
+            type="com.ayoolamasha.gopaddi.featureTrips.domain.model.ActivityUiData" />
+    </data>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/blue_button_background"
+        android:padding="@dimen/padding_16">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/roadhorizon"/>
+
+            <TextView
+                style="@style/TextAppearance.BodyText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activities"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_10"
+            >
+
+            <LinearLayout
+                android:id="@+id/empty_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/white_card_background"
+                android:paddingStart="@dimen/padding_100"
+                android:paddingEnd="@dimen/padding_100"
+                android:paddingTop="@dimen/padding_30"
+                android:paddingBottom="@dimen/padding_30"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/air_icon"/>
+
+                <TextView
+                    style="@style/TextAppearance.BodyText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_request"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <Button
+                    android:id="@+id/addActivity"
+                    style="@style/Widget.GoPaddi.Button.Main"
+                    android:text="@string/add_activities"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_10" />
+
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:background="@drawable/white_card_background"
+                android:paddingStart="@dimen/padding_20"
+                android:paddingEnd="@dimen/padding_20"
+                android:paddingTop="@dimen/padding_30"
+                android:paddingBottom="@dimen/padding_30">
+
+                <ImageView
+                    android:id="@+id/activityImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/activity_image"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/activity_nav"
+                    app:layout_constraintVertical_bias="0.85"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/activityImage"
+                    app:layout_constraintBottom_toBottomOf="@id/activityImage"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/activityImage"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <TextView
+                        style="@style/TextAppearance.BodyText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activityUiData.activityName}"
+                        tools:text="The Museum of Modern Art"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_10"/>
+
+                    <TextView
+                        style="@style/TextAppearance.BodyText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activityUiData.activityDetails}"
+                        tools:text="Works from Van Gogh to Warhol"
+                        android:textSize="@dimen/subtitle_text_size_14"
+                        android:layout_marginTop="@dimen/margin_3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/map_pin_two"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            tools:text="Melbourne, Austraila"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/star"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_10"/>
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/rating_num"
+                            android:textColor="@color/text_color_grey"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            android:layout_marginStart="@dimen/margin_5"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bed"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_10"/>
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@{activityUiData.activityDuration}"
+                            tools:text="1 hour"
+                            android:textColor="@color/text_color_grey"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            android:layout_marginStart="@dimen/margin_5"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_1"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@color/edit_text_background_stroke"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextAppearance.BodyText2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/change_time"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/subtitle_text_size_14" />
+
+                            <TextView
+                                style="@style/TextAppearance.BodyText2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/time"
+                                android:textSize="@dimen/subtitle_text_size_14"
+                                android:layout_marginTop="@dimen/margin_3"/>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/day_one_activity"
+                            android:paddingStart="@dimen/padding_10"
+                            android:paddingEnd="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_8"
+                            android:paddingBottom="@dimen/padding_8"
+                            android:background="@drawable/duration_card_background"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_1"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@color/edit_text_background_stroke"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:weightSum="3">
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/hotel_details"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            />
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/price_details"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            />
+
+                        <TextView
+                            style="@style/TextAppearance.BodyText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/edit_details"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/subtitle_text_size_14"
+                            />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_1"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@color/edit_text_background_stroke"/>
+
+                    <TextView
+                        style="@style/TextAppearance.BodyText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@{`₦ ` + activityUiData.activityPrice}"
+                        tools:text="123,450.00"
+                        android:textColor="@color/text_color_black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/subtitle_text_size_14"
+                        android:layout_marginTop="@dimen/margin_10"
+                        />
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:id="@+id/removeActivity"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/margin_10"
+                       android:background="@color/color_red_warning"
+                       android:padding="@dimen/padding_25">
+
+                       <TextView
+                           android:id="@+id/remove"
+                           style="@style/TextAppearance.BodyText2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/remove"
+                           android:textColor="@color/text_color_red"
+                           android:textStyle="bold"
+                           android:textSize="@dimen/subtitle_text_size_14"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           />
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/close_red"
+                           app:layout_constraintHorizontal_bias="0.05"
+                           android:layout_gravity="center_vertical"
+                           app:layout_constraintStart_toEndOf="@id/remove"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent"/>
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

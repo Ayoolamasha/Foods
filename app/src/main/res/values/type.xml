@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/header_text_size_32</item>
+        <item name="lineHeight">@dimen/line_height_38</item>
+        <item name="fontWeight">@integer/font_weight_700</item>
+    </style>
+
+    <style name="TextAppearance.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/header_text_size_28</item>
+        <item name="lineHeight">@dimen/line_height_32</item>
+        <item name="fontWeight">@integer/font_weight_500</item>
+    </style>
+
+    <style name="TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/header_text_size_36</item>
+        <item name="lineHeight">@dimen/line_height_43</item>
+        <item name="fontWeight">@integer/font_weight_400</item>
+    </style>
+
+
+    <style name="TextAppearance.SubTitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/body_text_size_16</item>
+        <item name="lineHeight">@dimen/line_height_18</item>
+        <item name="fontWeight">@integer/font_weight_500</item>
+    </style>
+
+    <style name="TextAppearance.SubTitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/body_text_size_16</item>
+        <item name="lineHeight">@dimen/line_height_18</item>
+        <item name="fontWeight">@integer/font_weight_400</item>
+    </style>
+
+    <style name="TextAppearance.BodyText1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/body_text_size_16</item>
+        <item name="lineHeight">@dimen/line_height_22</item>
+        <item name="fontWeight">@integer/font_weight_400</item>
+    </style>
+
+    <style name="TextAppearance.BodyText2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/satoshi_medium</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/body_text_size_16</item>
+        <item name="lineHeight">@dimen/line_height_22</item>
+        <item name="fontWeight">@integer/font_weight_400</item>
+    </style>
+
+
+    <style name="TextAppearance.TextButton" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/title_text_size_20</item>
+        <item name="lineHeight">@dimen/line_height_30</item>
+        <item name="fontWeight">@integer/font_weight_500</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/satoshi_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/subtitle_text_size_14</item>
+        <item name="lineHeight">@dimen/line_height_24</item>
+        <item name="fontWeight">@integer/font_weight_500</item>
+    </style>
+</resources>

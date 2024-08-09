@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#0D6EFD</color>
+    <color name="disable_brand_color">#800267FD</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_opacity_20">#33FFFFFF</color>
+    <color name="text_color_black">#1D2433</color>
+    <color name="text_color_grey">#676E7E</color>
+    <color name="text_color_red">#9E0A05</color>
+    <color name="color_red_warning">#FBEAE9</color>
+    <color name="edit_text_background">#F9FAFB</color>
+    <color name="edit_text_background_stroke">#E4E7EC</color>
+    <color name="edit_text_background_stroke_two">#98A2B3</color>
+    <color name="activity_card_color">#000031</color>
+    <color name="hotel_card_color">#E7F0FF</color>
+    <color name="hotel_two_card_color">#344054</color>
+    <color name="flight_card_color">#F0F2F5</color>
+    <color name="duration_card_color">#F7F9FC</color>
+    <color name="transparent">#0D000000</color>
+</resources>

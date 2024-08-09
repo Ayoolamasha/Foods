@@ -1,0 +1,207 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    //id 'androidx.navigation.safeargs'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.plugin.serialization'
+}
+
+kapt {
+    correctErrorTypes true
+    generateStubs = true
+}
+
+
+android {
+    namespace = "com.ayoolamasha.gopaddi"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.ayoolamasha.gopaddi"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        // Enable Coroutines and Flow APIs
+        freeCompilerArgs += "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+        freeCompilerArgs += "-opt-in=kotlinx.coroutines.FlowPreview"
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE',
+                         'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE',
+                         'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0',
+                         'META-INF/*.kotlin_module', '/META-INF/LGPL2.1', '/META-INF/AL2.0']
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-compat:28.0.0'
+            force("androidx.core:core-ktx:1.9.0")
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity-ktx:1.7.2'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'androidx.test:core-ktx:1.5.0'
+    // required to avoid crash on Android 12 API 31
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    //implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
+    implementation "androidx.fragment:fragment-ktx:$rootProject.fragmentVersion"
+
+    //OKHTTP
+    implementation('com.squareup.okhttp3:okhttp:5.0.0-alpha.2')
+    implementation('com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2')
+
+    // RETROFIT AND NETWORKING
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    implementation "com.squareup.moshi:moshi-kotlin:1.14.0"
+    implementation libs.androidx.gridlayout
+
+    // Moshi code generation
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.14.0"
+    implementation "com.squareup:kotlinpoet:1.12.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.0"
+
+    // Preferences DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // Proto DataStore
+    implementation "androidx.datastore:datastore:1.0.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.5"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2"
+
+    //DI
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+    implementation 'androidx.core:core-ktx:+'
+    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
+
+    //TIMBER
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion")
+
+    // Annotation processor
+    //kapt("androidx.lifecycle:lifecycle-compiler:$rootProject.lifecycleVersion")
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation("androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion")
+
+    // optional - helpers for implementing LifecycleOwner in a Service
+    implementation("androidx.lifecycle:lifecycle-service:$rootProject.lifecycleVersion")
+
+
+    //NAVIGATION/PAGING
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+    implementation "androidx.paging:paging-runtime-ktx:$rootProject.pagingVersion"
+
+    // alternatively - without Android dependencies for testing
+    testImplementation "androidx.paging:paging-common-ktx:$rootProject.pagingVersion"
+
+    implementation "androidx.viewpager2:viewpager2:$rootProject.viewPagerVersion"
+    //implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+
+    implementation 'co.paystack.android:paystack:3.1.3'
+
+    //Multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation('io.coil-kt:coil:2.3.0')
+
+    //DATABASE
+    implementation "androidx.room:room-ktx:2.6.1"
+    kapt "androidx.room:room-compiler:2.6.1"
+    implementation "androidx.room:room-paging:2.6.1"
+
+
+
+    // Testing dependencies
+    def fragment_version = "1.6.1"
+
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+    def nav_version = "2.7.4"
+
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    // For Robolectric tests.
+    testImplementation 'com.google.dagger:hilt-android-testing:2.44'
+    // ...with Kotlin.
+    kaptTest 'com.google.dagger:hilt-android-compiler:2.44'
+    // ...with Java.
+    testAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.44'
+
+
+    // For instrumented tests.
+    androidTestImplementation 'com.google.dagger:hilt-android-testing:2.44'
+    // ...with Kotlin.
+    kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.44'
+    // ...with Java.
+    androidTestAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.44'
+
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$rootProject.espressoVersion"
+    androidTestImplementation "com.google.truth:truth:1.1.3"
+    testImplementation "com.google.truth:truth:1.1.3"
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    testImplementation "io.mockk:mockk:$rootProject.mockk"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.coroutinesVersion"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.test:rules:1.5.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation "androidx.test:runner:1.5.2"
+    testImplementation "androidx.test:rules:1.5.0"
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.10.0")
+}

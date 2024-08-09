@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GoPaddi.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/blue
+        </item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="s">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.BaseTheme.DayNight</item>
+
+    </style>
+
+    <style name="Theme.BaseTheme.DayNight" parent="Theme.BaseTheme.MainTheme">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.BaseTheme.MainTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="scrimBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <!--System/Platform attributes-->
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- Customize your theme here. -->
+
+
+        <!--Typography-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Headline2</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Title</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.BodyText1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.BodyText2</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.TextButton</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Button</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.SubTitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.SubTitle2</item>
+
+    </style>
+
+    <style name="Theme.Calendar_Dialog" parent="Theme.BaseTheme.MainTheme">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="buttonTint">@color/blue</item>
+    </style>
+
+    <style name="Theme.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textSize">@dimen/body_text_size_16</item>
+        <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.AlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="Theme.App.SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="queryHint">@string/select_city</item>
+        <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="searchIcon">@null</item>
+    </style>
+
+    <style name="Theme.App.DatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+        </item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    MARGIN DIMENSIONS -->
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_45">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_130">130dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_180">170dp</dimen>
+    <dimen name="margin_190">170dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+
+    <dimen name="progress_bar_width">20dp</dimen>
+    <dimen name="progress_bar_height">20dp</dimen>
+
+    <!--    ELEVATION -->
+    <dimen name="elevation_5">5dp</dimen>
+    <dimen name="elevation_10">10dp</dimen>
+
+
+    <!-- WIDTH -->
+    <dimen name="width_0">0dp</dimen>
+    <dimen name="width_1">1dp</dimen>
+    <dimen name="width_2">1dp</dimen>
+    <dimen name="width_100">100dp</dimen>
+    <dimen name="width_120">120dp</dimen>
+    <dimen name="width_22">22dp</dimen>
+    <dimen name="width_30">30dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="width_50">50dp</dimen>
+    <dimen name="width_60">60dp</dimen>
+    <dimen name="width_70">70dp</dimen>
+    <dimen name="width_80">80dp</dimen>
+    <dimen name="width_200">200dp</dimen>
+    <dimen name="width_350">350dp</dimen>
+
+    <!-- HEIGHT -->
+    <dimen name="height_0">0dp</dimen>
+    <dimen name="height_16">16dp</dimen>
+    <dimen name="height_25">25dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="height_80">80dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="height_140">140dp</dimen>
+    <dimen name="height_150">150dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="height_200">200dp</dimen>
+    <dimen name="height_210">210dp</dimen>
+    <dimen name="height_250">250dp</dimen>
+    <dimen name="height_300">300dp</dimen>
+    <dimen name="height_350">350dp</dimen>
+    <dimen name="height_400">400dp</dimen>
+    <dimen name="height_500">500dp</dimen>
+
+
+    <!-- RADIUS -->
+    <dimen name="radius_0">0dp</dimen>
+    <dimen name="radius_3">3dp</dimen>
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_5">5dp</dimen>
+    <dimen name="radius_10">10dp</dimen>
+    <dimen name="radius_15">15dp</dimen>
+    <dimen name="radius_20">20dp</dimen>
+    <dimen name="radius_25">25dp</dimen>
+    <dimen name="radius_30">30dp</dimen>
+
+    <!--    PADDING DIMENSIONS  -->
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_18">18dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_25">25dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_35">35dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_100">100dp</dimen>
+    <dimen name="padding_120">120dp</dimen>
+    <dimen name="padding_130">130dp</dimen>
+    <dimen name="padding_150">150dp</dimen>
+    <dimen name="padding_170">170dp</dimen>
+    <dimen name="padding_180">170dp</dimen>
+    <dimen name="padding_190">170dp</dimen>
+    <dimen name="padding_200">200dp</dimen>
+    <dimen name="padding_layout_start">10dp</dimen>
+    <dimen name="padding_layout_end">10dp</dimen>
+
+    <!--     TEXT SIZE DIMENSIONS -->
+    <dimen name="header_text_size_40">40sp</dimen>
+    <dimen name="header_text_size_36">36sp</dimen>
+    <dimen name="header_text_size_32">32sp</dimen>
+    <dimen name="header_text_size_24">24sp</dimen>
+    <dimen name="header_text_size_28">28sp</dimen>
+
+    <dimen name="title_text_size_20">20sp</dimen>
+
+    <dimen name="body_text_size_16">16sp</dimen>
+    <dimen name="body_text_size_16_dp">16dp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="subtitle_text_size_18">18sp</dimen>
+    <dimen name="subtitle_text_size_18_dp">18dp</dimen>
+    <dimen name="subtitle_text_size_14">14sp</dimen>
+    <dimen name="subtitle_text_size_14_dp">14dp</dimen>
+    <dimen name="subtitle_text_size_14_actual">14sp</dimen>
+
+
+    <dimen name="button_text_size_16">16sp</dimen>
+    <dimen name="button_text_size_20">20sp</dimen>
+
+
+    <dimen name="caption_text_size_12">12sp</dimen>
+    <dimen name="caption_text_size_12_dp">12dp</dimen>
+    <dimen name="overline_text_size_10">10sp</dimen>
+
+
+    <!--    SHAPE CORNER RADIUS  -->
+    <dimen name="vale_small_component_corner_radius">8dp</dimen>
+    <dimen name="vale_medium_component_corner_radius">10dp</dimen>
+    <dimen name="vale_large_component_corner_radius">12dp</dimen>
+
+    <!-- FONT WEIGHT -->
+    <integer name="font_weight_400">400</integer>
+    <integer name="font_weight_500">500</integer>
+    <integer name="font_weight_600">600</integer>
+    <integer name="font_weight_700">700</integer>
+
+    <!-- LINE HEIGHT -->
+    <dimen name="line_height_43">43dp</dimen>
+    <dimen name="line_height_38">38dp</dimen>
+    <dimen name="line_height_32">32dp</dimen>
+    <dimen name="line_height_30">30dp</dimen>
+    <dimen name="line_height_24">24dp</dimen>
+    <dimen name="line_height_20">20dp</dimen>
+    <dimen name="line_height_22">22dp</dimen>
+    <dimen name="line_height_18">18dp</dimen>
+    <dimen name="line_height_16">16dp</dimen>
+    <dimen name="line_height_15">15dp</dimen>
+    <dimen name="line_height_13">13dp</dimen>
+    <dimen name="line_height_10">10dp</dimen>
+
+
+    <!-- DIMENSION RATIOS -->
+    <item format="float" name="guidelineStart" type="integer">0.05</item>
+    <item format="float" name="guidelineItemsStart" type="integer">0.07</item>
+    <item format="float" name="guidelineCheckBoxStart" type="integer">0.03</item>
+    <item format="float" name="guidelineMiddle" type="integer">0.5</item>
+    <item format="float" name="guidelineEnd" type="integer">0.95</item>
+    <item format="float" name="tabLayoutHeightPercent" type="integer">0.05</item>
+
+
+    1
+    <item format="float" name="repay_button_guideline_1" type="integer">0.12</item>
+    <item format="float" name="repay_button_guideline_2" type="integer">0.40</item>
+
+    <item format="float" name="status_bar_guideline_1" type="integer">0.57</item>
+    <item format="float" name="status_bar_guideline_2" type="integer">0.85</item>
+
+
+    <item format="float" name="edit_text_height_percentage" type="integer">0.07</item>
+    <item format="float" name="main_action_button_height_percentage" type="integer">0.07</item>
+    <item format="float" name="dashboard_height_percentage" type="integer">0.2</item>
+    <item format="float" name="chip_height_percentage" type="integer">0.05</item>
+    <item format="float" name="dashboard_action_height_percentage" type="integer">0.2</item>
+    <item format="float" name="home_actions_height_percentage" type="integer">0.1</item>
+    <item format="float" name="warning_bvn_height_percentage" type="integer">0.22</item>
+
+    <item format="float" name="view_group_height" type="integer">0.07</item>
+    <item format="float" name="small_view_group_height" type="integer">0.08</item>
+    <item format="float" name="box_view_group_height" type="integer">0.11</item>
+    <item format="float" name="big_box_view_group_height" type="integer">0.25</item>
+    <item format="float" name="small_box_view_group_height" type="integer">0.055</item>
+
+    <!-- DIMENSION RATIOS AND GUIDELINE PERCENT -->
+    <string name="button_ratio_status">16:4</string>
+    <string name="button_ratio_16">16:2.3</string>
+    <string name="input_field_ratio">16:2.5</string>
+    <string name="recycler_ratio">16:3</string>
+    <string name="white_card_scroll_ratio">16:4</string>
+    <string name="red_constraint_ratio">16:4</string>
+    <string name="card_background_ratio">16:3.3</string>
+    <string name="small_card_background_ratio">16:2</string>
+    <string name="share_home_card_background_ratio">16:3</string>
+    <string name="profile_image_ratio">16:13</string>
+    <string name="profile_image_account_info_ratio">16:10</string>
+    <string name="dashboard_box_card_ratio">16:11</string>
+    <string name="steps_ratio">16:2</string>
+
+</resources>
