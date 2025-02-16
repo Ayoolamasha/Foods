@@ -20,13 +20,7 @@ Kotlin Coroutines for threading.
 Retrofit for communicating with the API.
 Kotlin Flows reactive network calls.
 
-**ENDPOINT**
-The app contains four different endpoints which are managed by the BaseUrlInterceptor class 
-  - Trips endpoint: This is used to create and fetch trips
-  - Flight endpoint: This is used to get flight details
-  - Hotel endpoint: This is used to get hotel details
-  - Activity endpoint: This is used to get activity details
 
 **APK LINK**
-https://drive.google.com/file/d/1dOL91Uk37n7GxWUobgJ8FxEYT4PoSxDs/view?usp=sharing
+https://drive.google.com/file/d/1wQb6JG2sYdvPzSLPwmAwrmYgpxrwsN9Y/view?usp=sharing
     
