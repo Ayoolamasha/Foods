@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ayoolamasha.gopaddi.R
-import com.ayoolamasha.gopaddi.featureTrips.TripsActivity
+import com.ayoolamasha.gopaddi.featureTrips.FoodsActivity
 
 class MainActivity : AppCompatActivity() {
     private val mainActivityViewModel: MainActivityViewModel by viewModels()
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     private fun appLaunchCheck() {
 
         try {
-            val intent = Intent(this@MainActivity, TripsActivity::class.java)
+            val intent = Intent(this@MainActivity, FoodsActivity::class.java)
             startActivity(intent)
             finish()
         } catch (e: Exception) {

@@ -2,6 +2,7 @@
 <resources>
     <color name="blue">#0D6EFD</color>
     <color name="disable_brand_color">#800267FD</color>
+    <color name="disabled_color">#C9C9CD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_opacity_20">#33FFFFFF</color>
@@ -18,4 +19,8 @@
     <color name="flight_card_color">#F0F2F5</color>
     <color name="duration_card_color">#F7F9FC</color>
     <color name="transparent">#0D000000</color>
+    <color name="white_disable">#9D9EA1</color>
+    <color name="pink_ish_color">#FBF1F1</color>
+    <color name="tag_color">#645D5D</color>
+    <color name="divider_background">#E4E7EC</color>
 </resources>

@@ -30,7 +30,7 @@ class NetworkService @Inject constructor(private val moshi: Moshi) {
 
     private fun makeOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient.Builder()
-            .addInterceptor(BaseUrlInterceptor())
+            //.addInterceptor(BaseUrlInterceptor())
             .addInterceptor(SocketTimeOutInterceptor)
             .addInterceptor(httpLoggingInterceptor)
             //.addInterceptor(UnsuccessfulCallInterceptor)

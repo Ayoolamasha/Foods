@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/generatorFragment"
+        android:icon="@drawable/magicpen"
+        android:title="@string/generator" />
+
+    <item
+        android:id="@+id/addFoodFragment"
+        android:icon="@drawable/pluscircle"
+        android:title="@string/add" />
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/heart_two"
+        android:title="@string/favorite" />
+
+    <item
+        android:id="@+id/plannerFragment"
+        android:icon="@drawable/calendar"
+        android:title="@string/planner" />
+
+</menu>

@@ -118,51 +118,49 @@ dependencies {
 
     //DI
     implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
-    implementation 'androidx.core:core-ktx:+'
+    implementation libs.androidx.core.ktx.v1150
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
 
     //TIMBER
     implementation 'com.jakewharton.timber:timber:5.0.1'
 
     // ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion")
+    implementation(libs.androidx.lifecycle.viewmodel.ktx.v261)
 
     // Annotation processor
     //kapt("androidx.lifecycle:lifecycle-compiler:$rootProject.lifecycleVersion")
     // alternately - if using Java8, use the following instead of lifecycle-compiler
-    implementation("androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion")
+    implementation(libs.androidx.lifecycle.common.java8)
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation("androidx.lifecycle:lifecycle-service:$rootProject.lifecycleVersion")
+    implementation(libs.androidx.lifecycle.service)
 
 
     //NAVIGATION/PAGING
-    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
-    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
-    implementation "androidx.paging:paging-runtime-ktx:$rootProject.pagingVersion"
+    implementation libs.androidx.navigation.fragment.ktx.v271
+    implementation libs.androidx.navigation.ui.ktx.v271
+    implementation libs.androidx.paging.runtime.ktx
 
     // alternatively - without Android dependencies for testing
-    testImplementation "androidx.paging:paging-common-ktx:$rootProject.pagingVersion"
+    testImplementation libs.androidx.paging.common.ktx
 
-    implementation "androidx.viewpager2:viewpager2:$rootProject.viewPagerVersion"
+    implementation libs.androidx.viewpager2
     //implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
-    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation libs.gson
 
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+    implementation libs.kotlinx.coroutines.android.v171
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
-    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+    implementation libs.hilt
 
-    implementation 'co.paystack.android:paystack:3.1.3'
 
     //Multidex
     implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation('io.coil-kt:coil:2.3.0')
 
-    //DATABASE
-    implementation "androidx.room:room-ktx:2.6.1"
-    kapt "androidx.room:room-compiler:2.6.1"
-    implementation "androidx.room:room-paging:2.6.1"
+    implementation libs.flexbox
+
+    implementation libs.imagepicker
 
 
 

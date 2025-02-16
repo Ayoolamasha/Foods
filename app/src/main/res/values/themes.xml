@@ -4,6 +4,7 @@
         <item name="windowSplashScreenBackground">@color/blue</item>
         <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/blue
         </item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="windowSplashScreenAnimationDuration">500</item>
         <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="s">300</item>
         <item name="postSplashScreenTheme">@style/Theme.BaseTheme.DayNight</item>
@@ -79,15 +80,14 @@
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
 
-    <style name="Theme.App.SearchViewStyle" parent="Widget.AppCompat.SearchView">
-        <item name="android:textCursorDrawable">@drawable/cursor</item>
-    </style>
-
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
-        <item name="queryHint">@string/select_city</item>
+        <item name="queryHint">@string/search_foods</item>
         <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="queryBackground">@drawable/search_background</item>
+        <item name="android:background">@drawable/search_background</item>
+        <item name="android:textSize">@dimen/subtitle_text_size_14</item>
+        <item name="android:textColor">@color/white_disable</item>
         <item name="iconifiedByDefault">false</item>
-        <item name="searchIcon">@null</item>
     </style>
 
     <style name="Theme.App.DatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
@@ -106,5 +106,49 @@
 
     <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="TagsChips" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tag_color</item>
+        <item name="android:paddingStart">@dimen/padding_8</item>
+        <item name="android:paddingEnd">@dimen/padding_8</item>
+        <item name="android:paddingTop">@dimen/padding_4</item>
+        <item name="android:paddingBottom">@dimen/padding_4</item>
+        <item name="chipCornerRadius">@dimen/margin_8</item>
+        <item name="chipBackgroundColor">@color/pink_ish_color</item>
+        <item name="android:textSize">@dimen/caption_text_size_12</item>
+        <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="android:clickable">false</item>
+        <item name="android:checkable">false</item>
+    </style>
+
+    <style name="Theme.BottomSheetDialog" parent="Theme.MaterialComponents">
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustResize|adjustPan</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Widget.WhiteActionCardsBg" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/padding_20</item>
+        <item name="android:background">@drawable/white_card_background</item>
+        <item name="android:paddingTop">@dimen/padding_20</item>
     </style>
 </resources>

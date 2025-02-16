@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="category"
+            type="com.ayoolamasha.gopaddi.featureTrips.domain.model.GetCategoryTagsUIData" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/quickAmountLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10"
+            android:background="@drawable/white_label_opacity_background"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:onClick="@{clickListener}">
+
+            <TextView
+                android:id="@+id/quickAmount"
+                style="@style/TextAppearance.BodyText2"
+                tools:text="Healthy"
+                android:text="@{category.name}"
+                android:textColor="#676E7E" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

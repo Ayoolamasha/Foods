@@ -57,7 +57,6 @@
             android:background="@drawable/blue_background_stroke_white">
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/enterSearchName"
-                android:theme="@style/Theme.App.SearchViewStyle"
                 style="@style/SearchViewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_80" />
@@ -69,7 +68,7 @@
             android:id="@+id/country_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/item_countries_recycler_design"/>
+            tools:listitem="@layout/item_tags_recycler_design"/>
 
     </LinearLayout>
 

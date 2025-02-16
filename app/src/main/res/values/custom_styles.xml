@@ -37,8 +37,23 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColorHint">@color/edit_text_background_stroke_two</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:padding">@dimen/padding_14</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/subtitle_text_size_14</item>
+    </style>
+
+    <style name="Widget.GoPaddi.EditText.MultiText" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/edit_text_background</item>
         <item name="android:textAppearance">?attr/textAppearanceBody2</item>
-        <item name="android:textColorHint">@color/text_color_grey</item>
+        <item name="android:textColorHint">@color/edit_text_background_stroke_two</item>
         <item name="android:textColor">@color/text_color_black</item>
         <item name="android:paddingStart">@dimen/padding_5</item>
         <item name="android:paddingTop">@dimen/padding_12</item>
@@ -46,6 +61,22 @@
         <item name="android:imeOptions">actionDone</item>
         <item name="android:textCursorDrawable">@null</item>
         <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">@dimen/subtitle_text_size_14</item>
+    </style>
+
+    <style name="Widget.GoPaddi.EditText.Number" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColorHint">@color/edit_text_background_stroke_two</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:padding">@dimen/padding_14</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">@dimen/subtitle_text_size_14</item>
     </style>
 
 

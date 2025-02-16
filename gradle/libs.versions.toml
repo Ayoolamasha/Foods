@@ -1,16 +1,26 @@
 [versions]
 agp = "8.4.2"
+androidxCoreKtx = "1.15.0"
+flexbox = "3.0.0"
+gson = "2.9.0"
+imagepicker = "2.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+kotlinxCoroutinesAndroid = "1.7.1"
+lifecycleService = "2.6.1"
+lifecycleViewmodelKtx = "2.6.1"
 material = "1.12.0"
 activity = "1.9.1"
 constraintlayout = "2.1.4"
 hiltVersion = "2.44"
 moshi = "1.14.0"
+navigationFragmentKtx = "2.7.1"
+navigationUiKtx = "2.7.1"
+pagingCommonKtx = "3.2.0"
 retrofit = "2.9.0"
 okhttp = "5.0.0-alpha.2"
 timber = "5.0.1"
@@ -23,13 +33,27 @@ lifecycleVersion = "2.8.4"
 poet = "1.12.0"
 splashScreen = "1.0.1"
 gridlayout = "1.0.0"
+viewpager2 = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1150 = { module = "androidx.core:core-ktx", version.ref = "androidxCoreKtx" }
+androidx-lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycleService" }
+androidx-lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycleService" }
+androidx-lifecycle-viewmodel-ktx-v261 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-navigation-fragment-ktx-v271 = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx-v271 = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-paging-common-ktx = { module = "androidx.paging:paging-common-ktx", version.ref = "pagingCommonKtx" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingCommonKtx" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+imagepicker = { module = "com.github.dhaval2404:imagepicker", version.ref = "imagepicker" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android-v171 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }

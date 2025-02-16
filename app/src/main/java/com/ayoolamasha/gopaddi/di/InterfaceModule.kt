@@ -1,12 +1,12 @@
 package com.ayoolamasha.gopaddi.di
 
 
-import com.ayoolamasha.gopaddi.apiService.TripApiServiceHelper
-import com.ayoolamasha.gopaddi.apiService.TripApiServiceHelperImpl
-import com.ayoolamasha.gopaddi.featureTrips.data.repository.TripRepositoryHelper
-import com.ayoolamasha.gopaddi.featureTrips.data.repository.TripRepositoryHelperImpl
-import com.ayoolamasha.gopaddi.featureTrips.domain.repository.TripsDomainRepositoryHelper
-import com.ayoolamasha.gopaddi.featureTrips.domain.repository.TripsDomainRepositoryImpl
+import com.ayoolamasha.gopaddi.apiService.FoodApiServiceHelper
+import com.ayoolamasha.gopaddi.apiService.FoodApiServiceHelperImpl
+import com.ayoolamasha.gopaddi.featureTrips.data.repository.FoodsRepositoryHelper
+import com.ayoolamasha.gopaddi.featureTrips.data.repository.FoodsRepositoryHelperImpl
+import com.ayoolamasha.gopaddi.featureTrips.domain.repository.FoodsDomainRepositoryHelper
+import com.ayoolamasha.gopaddi.featureTrips.domain.repository.FoodsDomainRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -16,11 +16,11 @@ import dagger.hilt.components.SingletonComponent
 abstract class InterfaceModule {
 
     @Binds
-    abstract fun providesApiServiceHelper(tripApiServiceHelperImpl: TripApiServiceHelperImpl): TripApiServiceHelper
+    abstract fun providesApiServiceHelper(tripApiServiceHelperImpl: FoodApiServiceHelperImpl): FoodApiServiceHelper
 
     @Binds
-    abstract fun providesTripDomainRepositoryHelper(tripsDomainRepositoryImpl: TripsDomainRepositoryImpl): TripsDomainRepositoryHelper
+    abstract fun providesTripDomainRepositoryHelper(tripsDomainRepositoryImpl: FoodsDomainRepositoryImpl): FoodsDomainRepositoryHelper
 
     @Binds
-    abstract fun providesTripRepositoryHelper(tripRepositoryHelperImpl: TripRepositoryHelperImpl): TripRepositoryHelper
+    abstract fun providesTripRepositoryHelper(tripRepositoryHelperImpl: FoodsRepositoryHelperImpl): FoodsRepositoryHelper
 }

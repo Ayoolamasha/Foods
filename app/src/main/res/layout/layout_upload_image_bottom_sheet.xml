@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="true"
+        style="@style/Theme.BottomSheetDialog"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/uploadProfileHeader"
+                style="@style/TextAppearance.BodyText2"
+                android:text="@string/upload_image"
+                android:textSize="@dimen/header_text_size_24"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.05"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guidelineStart"
+                app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/uploadProfileSub"
+                style="@style/TextAppearance.BodyText1"
+                android:text="@string/upload_profile_image_sub"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.01"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintTop_toBottomOf="@id/uploadProfileHeader"
+                app:layout_constraintStart_toEndOf="@id/guidelineStart"
+                app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/useCameraConstraint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.WhiteActionCardsBg"
+                android:background="@drawable/white_ish_inner_card_background"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.05"
+                app:layout_constrainedWidth="true"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_20"
+                app:layout_constraintTop_toBottomOf="@id/uploadProfileSub"
+                app:layout_constraintStart_toEndOf="@id/guidelineStart"
+                app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/useCameraIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:src="@drawable/ic_camera_profile_edit"
+                    app:layout_constraintStart_toEndOf="@id/guidelineCameraStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    style="@style/TextAppearance.BodyText2"
+                    android:text="@string/use_camera"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toEndOf="@id/useCameraIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineCameraStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/useGalleryConstraint"
+                style="@style/Widget.WhiteActionCardsBg"
+                android:background="@drawable/white_ish_inner_card_background"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.05"
+                app:layout_constrainedWidth="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                app:layout_constraintHeight_percent="0.14"
+                app:layout_constraintTop_toBottomOf="@id/useCameraConstraint"
+                app:layout_constraintStart_toEndOf="@id/guidelineStart"
+                app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/useGalleryIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:src="@drawable/ic_gallery_profile_icon"
+                    app:layout_constraintStart_toEndOf="@id/guidelineGalleryStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    style="@style/TextAppearance.BodyText2"
+                    android:text="@string/pick_from_gallery"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toEndOf="@id/useGalleryIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineGalleryStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--- MAIN GUIDELINE -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="@integer/guidelineStart" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="@integer/guidelineEnd" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>

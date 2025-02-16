@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="categoryTag"
+            type="com.ayoolamasha.gopaddi.featureTrips.domain.model.GetCategoryTagsUIData" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:text="@{categoryTag.name}"
+        android:onClick="@{clickListener}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5"
+        tools:text="Test" />
+</layout>

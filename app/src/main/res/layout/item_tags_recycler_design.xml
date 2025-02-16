@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <TextView android:id="@+id/tags"
+        style="@style/TextAppearance.BodyText1"
+        tools:text="healthy"
+        android:background="@drawable/pink_ish_bg"
+        android:paddingTop="@dimen/padding_4"
+        android:paddingBottom="@dimen/padding_4"
+        android:paddingStart="@dimen/padding_8"
+        android:paddingEnd="@dimen/padding_8"
+        android:textSize="@dimen/caption_text_size_12"
+        android:layout_marginTop="@dimen/margin_8"
+        android:textColor="@color/tag_color"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"/>
+</layout>
+

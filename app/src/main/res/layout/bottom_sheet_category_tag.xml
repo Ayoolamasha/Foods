@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottomSheetRecycler"
+            android:layout_width="@dimen/width_0"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_20"
+            tools:listitem="@layout/item_bottom_sheet_design"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"/>
+        
+
+
+
+        <!--- MAIN GUIDELINE -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/guidelineStart" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/guidelineEnd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

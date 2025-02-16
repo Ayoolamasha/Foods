@@ -2,7 +2,7 @@ package com.ayoolamasha.gopaddi.di
 
 
 
-import com.ayoolamasha.gopaddi.apiService.TripApiService
+import com.ayoolamasha.gopaddi.apiService.FoodApiService
 import com.ayoolamasha.gopaddi.network.NetworkService
 import com.ayoolamasha.gopaddi.network.middleware.ConnectivityMiddleware
 import com.ayoolamasha.gopaddi.network.middleware.MiddlewareProvider
@@ -23,7 +23,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private const val BASE_URL = "https://cadfc2781c00439dc5a3.free.beeceptor.com/api/"
+    private const val BASE_URL = "https://assessment.vgtechdemo.com/api/"
 
     @[Provides Singleton]
     fun provideRetrofit(networkFactory: NetworkService): Retrofit =
@@ -60,7 +60,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideTripApiService(retrofit: Retrofit): TripApiService{
-        return retrofit.create(TripApiService::class.java)
+    fun provideTripApiService(retrofit: Retrofit): FoodApiService{
+        return retrofit.create(FoodApiService::class.java)
     }
 }
